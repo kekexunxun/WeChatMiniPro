@@ -1,0 +1,2 @@
+# WeChatMiniPro
+merchant inviting miniPro
