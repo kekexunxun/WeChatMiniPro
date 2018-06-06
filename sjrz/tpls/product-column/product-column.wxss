@@ -1,0 +1,41 @@
+
+.product-box {
+  display: flex;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding: 20rpx;
+}
+.product-left image {
+ width:130px;
+ height:130px;
+}
+
+.product-right {
+  padding-left: 20rpx;
+  flex: 60%;
+  /* 检测出存在 商品名长度不够一行，下面按钮对不正确，因此设置了flex 60%*/
+}
+
+.product-right-name {
+  display: block;
+  font-size:13px;
+  line-height: 18px;
+  padding-top: 5px;
+}
+
+.product-right-people {
+  display: block;
+  font-size: 12px;
+  padding-top: 25px;
+  color: gray;
+}
+
+.product-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.product-bottom-count {
+  font-size: 12px;
+}

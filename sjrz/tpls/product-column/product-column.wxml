@@ -1,0 +1,16 @@
+<!-- 这是宽度为100%,详情左右排布的模板-->
+<template name="product-column">
+  <view class='product-box' wx:for="{{goods}}" wx:key="key">
+    <view class='product-left'>
+      <image src="{{item.original_img}}" />
+    </view>
+    <view class='product-right'>
+      <text class='product-right-name'>{{item.goods_title}}</text>
+      <text class='product-right-people'>在线人数{{item.on_sell_num}}人</text>
+      <view class='product-bottom'>
+        <text class='product-bottom-count'>已经报名{{item.signup}}家</text>
+        <button class='baoming-btn-small' bindtap='signup' data-goodsid="{{item.goods_id}}">我要报名</button>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,43 @@
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20rpx;
+  /*弹性布局，超出自动伸缩  */
+}
+
+.product-box {
+  width: 49%;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+
+.product-image image {
+  width: 100%;
+}
+
+.product-container{
+ border: 1rpx solid #f5f6f7 ;
+}
+
+.product-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.product-bottom {
+  display: flex;
+  align-items: center;
+  padding-top: 10rpx;
+}
+
+.product-bottom text {
+  font-size: 24rpx;
+  color: #ff7300;
+  line-height: 40rpx;
+}

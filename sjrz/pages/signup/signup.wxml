@@ -1,2 +1,84 @@
-<!--pages/signup/signup.wxml-->
-<text>pages/signup/signup.wxml</text>
+<!--主体部分  -->
+<view class='body'>
+  <!-- banner 主图  -->
+  <view class='bannerbox'>
+    <image src="{{goodsInfo.original_img}}" class="banner_img" mode="widthFix" />
+  </view>
+  <!--详情  -->
+  <view class='detail'>
+    <text class='good_name'>{{goodsInfo.goods_title}}</text>
+    <text class='count'>已报名{{goodsInfo.signup}}家</text>
+    <view class='timelimit'>
+      <image src="../../images/signup/time.png" class="time_img" mode="widthFix" />
+      <text class='time_text'>限时抢购</text>
+    </view>
+    <!--商品分类  -->
+    <view class='typebox'>
+      <text class='type'>商家类目范围：（后台编辑)</text>
+      <text class='date'>上线期限：4.16</text>
+    </view>
+    <!--报名部分  -->
+    <!--姓名  -->
+    <form bindsubmit='submit'>
+      <view class='inputzone'>
+        <view class='inputzone-img'>
+          <image src="../../images/signup/name.png" class="input_img name_img" mode="widthFix" />
+        </view>
+        <view class='inputzone-input'>
+          <input class='input_sign' name="name" placeholder='请输入入驻人真实姓名'></input>
+        </view>
+      </view>
+      <!--手机  -->
+      <view class='inputzone'>
+        <view class='inputzone-img'>
+          <image src="../../images/signup/phone.png" class="input_img phone_img" mode="widthFix" />
+        </view>
+        <view class='inputzone-input'>
+          <input class='input_sign' name="phone" placeholder='请输入联系方式'></input>
+        </view>
+      </view>
+      <!--邮箱  -->
+      <view class='inputzone'>
+        <view class='inputzone-img'>
+          <image src="../../images/signup/email.png" class="input_img email_img" mode="widthFix" />
+        </view>
+        <view class='inputzone-input'>
+          <input class='input_sign' name="mail" placeholder='请输入常用邮箱，便于信息及时送达'></input>
+        </view>
+      </view>
+      <!--微信  -->
+      <view class='inputzone'>
+        <view class='inputzone-img'>
+          <image src="../../images/signup/wechat.png" class="input_img wechat_img" mode="widthFix" />
+        </view>
+        <view class='inputzone-input'>
+          <input class='input_sign' name="wechat" placeholder='请输入您的微信号'></input>
+        </view>
+      </view>
+      <!--分类  -->
+      <view class='inputzone'>
+        <view class='inputzone-img'>
+          <image src="../../images/signup/type.png" class="input_img type_img" mode="widthFix" />
+        </view>
+        <view class='inputzone-input'>
+          <input class='input_sign' name="category" placeholder='请输入产品分类'></input>
+        </view>
+      </view>
+      <!--链接  -->
+      <view class='inputzone'>
+        <view class='inputzone-img'>
+          <image src="../../images/signup/link.png" class="input_img link_img" mode="widthFix" />
+        </view>
+        <view class='inputzone-input'>
+          <input class='input_sign' name="link" placeholder='请输入店铺/产品链接/'></input>
+        </view>
+      </view>
+      <!--提交按钮  -->
+      <view class='inputzone btnzone'>
+        <button class='submitbtn' formType='submit'>提交</button>
+        <text class='rule'>规则：当前报名提交后不可撤销</text>
+      </view>
+    </form>
+  </view>
+
+</view>

@@ -1,2 +1,12 @@
-<!--pages/xrth/xrth.wxml-->
-<text>pages/xrth/xrth.wxml</text>
+<!--新人特惠  -->
+<!--主体部分  -->
+<import src="/tpls/product-row/product-row.wxml" />
+<view class='body'>
+  <!--顶部-->
+  <view class='topbox'>
+    <text class='tline'></text>
+    <text class='pagetitle'>今日爆款</text>
+    <text class='tline'></text>
+  </view>
+     <template is="product-row" data="{{modulelist:goods}}" />
+</view>

@@ -1,2 +1,12 @@
-<!--pages/xpsf/xpsf.wxml-->
-<text>pages/xpsf/xpsf.wxml</text>
+<!--新品首发  -->
+<import src="/tpls/product-column/product-column.wxml" />
+<view class='body'>
+  <!--日期显示  -->
+  <view class='datezone'>
+    <text class='tline'></text>
+    <text class='nowdate'>{{nowdate}}</text>
+    <text class='tline'></text>
+  </view>
+  <!--商品列表  -->
+  <template is="product-column" data="{{goods:goods}}" />
+</view>

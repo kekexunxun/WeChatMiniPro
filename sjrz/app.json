@@ -2,8 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/xpsf/xpsf",
-    "pages/xstm/xstm",
+    "pages/mrsj/mrsj",
     "pages/xrth/xrth",
+    "pages/xdbb/xdbb",
     "pages/product/product",
     "pages/merchant/merchant",
     "pages/signup/signup",
@@ -12,7 +13,30 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "Wechat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#EC6A8E",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index_logo.png",
+        "selectedIconPath": "/images/index_logo_se.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "产品",
+        "iconPath": "/images/search_logo.png",
+        "selectedIconPath": "/images/search_logo_se.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "/images/person_logo.png",
+        "selectedIconPath": "/images/person_logo_se.png"
+      }
+    ]
   }
 }

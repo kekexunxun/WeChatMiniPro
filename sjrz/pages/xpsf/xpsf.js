@@ -1,18 +1,47 @@
 // pages/xpsf/xpsf.js
+const app=getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    nowdate:'05月16日',
+    goodimg:'../../images/xpsf/goodimg.png'
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this;
+    wx.request({
+      url: app.globalData.siteroot + '/index.php/wxprogram/modulelist',
+      dataType: 'json',
+      method: 'POST',
+      data: {
+        plate_id: 4,
+        page: 1
+      },
+      success: function (res) {
+        console.log(res);
+        that.setData({
+          goods: res.data.data.list.data
+        })
+      },
+      fail: function () {
+        console.log('failed');
+      },
+      complete: function () {
+      }
+    })
+  },
+
+  signup: function (e) {
+    var that = this;
+    var goodsid = e.currentTarget.dataset.goodsid;
+    wx.navigateTo({
+      url: '../signup/signup?goodsid=' + goodsid,
+    })
   },
 
   /**

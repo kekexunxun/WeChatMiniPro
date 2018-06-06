@@ -1,0 +1,35 @@
+.goodbox{
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   margin-top: 20rpx;
+}
+.goodbox-img{
+  width: 100%;
+  height: 180px;
+}
+.goodbox-bottom{
+  
+    padding: 20rpx;
+}
+.goodbox-name{
+  display: inline-block;
+  width: 100%;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap; 
+  line-height: 20px;
+}
+.goodbox-bottom-bottom{
+  display: flex;
+  align-items: center;
+}
+.goodbox-bottom-bottom-count{
+  font-size: 13px;
+}
+.rigup {
+  font-size: 11px;
+  color: gray;
+  line-height: 11px;
+}

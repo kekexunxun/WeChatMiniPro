@@ -1,2 +1,81 @@
-<!--pages/merchant/merchant.wxml-->
-<text>pages/merchant/merchant.wxml</text>
+<!--主体部分  -->
+<view class='body'>
+  <!--banner 主图  -->
+  <view class='bannerbox'>
+    <image src="{{bannerimg}}" class="banner_img" mode="aspectFill" />
+  </view>
+  <!--报名流程  -->
+  <view class='enlistbox'>
+    <view class='common_title'>
+      <text>报名流程</text>
+    </view>
+    <view class='enlist_con'>
+      <view class='imgbox'>
+        <image src="../../images/merchant/lc1.png" class="lc_img" mode="aspectFill" />
+        <image src="../../images/merchant/lc.png" class="lc_img2" mode="aspectFill" />
+        <image src="../../images/merchant/lc2.png" class="lc_img" mode="aspectFill" />
+        <image src="../../images/merchant/lc.png" class="lc_img2" mode="aspectFill" />
+        <image src="../../images/merchant/lc3.png" class="lc_img" mode="aspectFill" />
+      </view>
+    </view>
+  </view>
+  <!--为什么选择赛客宝贝  -->
+  <view class='whybox'>
+    <view class='common_title'>
+      <text>为什么选择赛客宝贝街</text>
+    </view>
+    <view class='reasonbox'>
+      <view class='reason'>
+        <view class='rimgbox'>
+          <image src="../../images/merchant/reason1.png" class="reason_img" mode="aspectFill" />
+          <text class='reason_text1'>极速开店，无需装修</text>
+          <text class='reason_text2'>极速开店，无需装修</text>
+        </view>
+      </view>
+      <view class='reason'>
+        <view class='rimgbox'>
+          <image src="../../images/merchant/reason2.png" class="reason_img" mode="aspectFill" />
+          <text class='reason_text1'>千万活跃用户</text>
+          <text class='reason_text2'>千万活跃用户</text>
+        </view>
+      </view>
+      <view class='reason'>
+        <view class='rimgbox'>
+          <image src="../../images/merchant/reason3.png" class="reason_img" mode="aspectFill" />
+          <text class='reason_text1'>千万活跃用户</text>
+          <text class='reason_text2'>千万活跃用户</text>
+        </view>
+      </view>
+      <view class='reason'>
+        <view class='rimgbox'>
+          <image src="../../images/merchant/reason4.png" class="reason_img" mode="aspectFill" />
+          <text class='reason_text1'>千万活跃用户</text>
+          <text class='reason_text2'>千万活跃用户</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--未来你将成为他们  -->
+  <view class='futruebox'>
+    <view class='common_title'>
+      <text>未来你将成为他们</text>
+    </view>
+  </view>
+  <view class='peoplezone'>
+    <view class='peoplebox' wx:for="{{anli}}" wx:key="key">
+      <!--头像  -->
+      <view class='txbox'>
+        <image src="{{item.image_url}}" class="tx_img" mode="aspectFill" />
+      </view>
+      <!--其他介绍  -->
+      <view class='introduce'>
+        <view>
+          <text class='name'>{{item.name}}</text>
+          <text class='shop'>{{item.shop_name}}</text>
+          <text class='name'>{{item.title}}</text>
+        </view>
+        <text class='detail'>{{item.description}}</text>
+      </view>
+    </view>
+  </view>
+</view>

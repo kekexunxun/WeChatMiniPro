@@ -1,1 +1,215 @@
-/* pages/my/my.wxss */
+/*body背景  */
+@import "/tpls/product-small/product-small.wxss";
+page {
+  position: flex;
+  background-color: #f5f6f7;
+  width: 100%;
+  height: 100%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+/*个人信息  */
+
+.messagebox {
+  width: 100%;
+  height: 115px;
+  background-color: #f60042;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.txbox {
+  flex: 25%;
+}
+
+.detail {
+  flex: 75%;
+}
+
+.tx_img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25.5px;
+}
+
+.name {
+  font-size: 16px;
+  color: white;
+  display: block;
+  margin-top: 25.5px;
+}
+
+.upbtn {
+  font-size: 12px;
+  border: 1rpx solid white;
+  display: inline-block;
+  color: white;
+  line-height: 20px;
+  border-radius: 10px;
+  background: #f60042;
+  margin-top: 10px;
+  padding: 0 6px;
+}
+
+/*客服  入住  */
+
+.expand {
+  width: 100%;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.showmore {
+  height: auto;
+  width: 100%;
+  /* display:block; */
+  border-bottom: 1px solid #f5f6f7;
+  display: flex;
+  flex-direction: row;
+  line-height: 36px;
+  font-size: 15px;
+}
+
+.showmore button {
+  border-radius: 0;
+  padding: 0 6px;
+  font-size: 15px;
+  line-height: 36px;
+  background-color: rgba(1, 1, 1, 0);
+  width: 100%;
+  text-align: left;
+  color: #333;
+  display: flex;
+}
+
+button::after {
+  border: 0;
+}
+
+.show_left {
+  width: 50%;
+  padding-left: 2%;
+}
+
+.show_left text {
+  margin-left: 5px;
+}
+
+.show_right {
+  width: 50%;
+  text-align: right;
+}
+
+.show_right text {
+  margin-left: 5px;
+}
+
+.right_img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 3%;
+  margin-top: 10px;
+}
+
+.small_logo {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  padding-top: -3px;
+}
+
+/*推荐  */
+
+.recommend {
+  width: 100%;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.title_box {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.title_box text {
+  margin-left: 5px;
+}
+
+.recommend_logo {
+  width: 16px;
+  height: 16px;
+  margin-top: -3px;
+}
+
+/* .recommend_zone {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+/*  
+ .goodbox {
+  width: 50%;
+  border: 1px solid #f5f6f7;
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+
+.recommend_zone_bottom{
+  direction: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.enlistbtn {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 20px;
+  border: 1rpx solid red;
+  border-radius: 10px;
+  background-color: white;
+  color: red;
+  margin-top: 0rpx;
+  padding: 0 10rpx;
+}
+.good_img{
+  width: 100%;
+  height: 180px;
+}
+ .good_name{
+  width: 100%;
+} 
+.good_name text{
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:1; 
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.count{
+  font-size: 12px;
+  color:#ff7300;
+  line-height: 20px;
+}
+.small_tx_img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  vertical-align:middle;
+  display: inline-block;
+  float:right;
+  margin-bottom: 5px;
+}   */
+

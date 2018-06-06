@@ -1,0 +1,14 @@
+<!--这是宽度100%，上下排布的商品详情模板，适用于产品Tab栏和新人特惠，注意两个页面的接口返回字段名称不太一致-->
+<template name="product-row">
+  <view class='goodbox' wx:for="{{modulelist}}" wx:key="key">
+    <image src="{{item.original_img}}" class="goodbox-img" mode="aspectFill" />
+    <view class='goodbox-bottom'>
+      <text class='goodbox-name'>{{item.goods_name}}{{item.goods_title}}</text>
+      <text class='rigup'  >已拼{{item.on_sell_num}}件</text>
+      <view class='goodbox-bottom-bottom'>
+        <text class='goodbox-bottom-bottom-count'>已经报名{{item.store_count}}{{item.signup}}家</text>
+        <button class='baoming-btn-larger' bindtap='signup' data-idx="{{index}}" data-goodsid="{{item.goods_id}}" >我要报名</button>
+      </view>
+    </view>
+  </view>
+</template>

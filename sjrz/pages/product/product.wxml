@@ -1,2 +1,75 @@
-<!--pages/product/product.wxml-->
-<text>pages/product/product.wxml</text>
+<import src="/tpls/product-row/product-row.wxml" />
+<!--产品  -->
+<!--主体部分  -->
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <scroll-view class='scroll-view' scroll-x="true">
+        <view class="weui-navbar">
+          <block wx:for="{{tabs}}" wx:key="list">
+            <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+              <view class="weui-navbar__title">{{item}}</view>
+            </view>
+          </block>
+          <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+        </view>
+      </scroll-view>
+
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <template is="product-row" data="{{modulelist:modulelist1}}" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <!-- 选项二的内容 -->
+          <block wx:for="{{modulelist2}}" wx:key="key">
+            <template is="product-row" data="{{modulelist:modulelist2}}" />
+          </block>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+          <!-- 选项三的内容 -->
+          <template is="product-row" data="{{modulelist:modulelist3}}" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 3}}" wx:for="{{modulelist4}}" wx:key="key">
+          <!-- 选项四的内容 -->
+          <template is="product-row" data="{{modulelist:modulelist4}}" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 4}}" wx:for="{{modulelist4}}" wx:key="key">
+          <!-- 选项四的内容 -->
+          <template is="product-row" data="{{modulelist:modulelist5}}" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 5}}" wx:for="{{modulelist4}}" wx:key="key">
+          <!-- 选项四的内容 -->
+          <template is="product-row" data="{{modulelist:modulelist6}}" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 6}}" wx:for="{{modulelist4}}" wx:key="key">
+          <!-- 选项四的内容 -->
+          <template is="product-row" data="{{modulelist:modulelist7}}" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 7}}" wx:for="{{modulelist4}}" wx:key="key">
+          <!-- 选项四的内容 -->
+          <template is="product-row" data="{{modulelist:modulelist8}}" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 8}}" wx:for="{{modulelist4}}" wx:key="key">
+          <!-- 选项四的内容 -->
+          <template is="product-row" data="{{modulelist:modulelist9}}" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 9}}" wx:for="{{modulelist4}}" wx:key="key">
+          <!-- 选项四的内容 -->
+          <template is="product-row" data="{{modulelist:modulelist10}}" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 10}}" wx:for="{{modulelist4}}" wx:key="key">
+          <!-- 选项四的内容 -->
+          <template is="product-row" data="{{modulelist:modulelist11}}" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 11}}" wx:for="{{modulelist4}}" wx:key="key">
+          <!-- 选项四的内容 -->
+          <template is="product-row" data="{{modulelist:modulelist12}}" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 12}}" wx:for="{{modulelist4}}" wx:key="key">
+          <!-- 选项四的内容 -->
+          <template is="product-row" data="{{modulelist:modulelist13}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

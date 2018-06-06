@@ -1,13 +1,58 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<!-- 轮播图部分 -->
+<view class='bannerbox'>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{banner}}" wx:for-index="index" wx:key="key">
+      <swiper-item>
+        <image src="{{item.original_img}}" class="slide-image" mode="aspectFill" />
+      </swiper-item>
     </block>
+  </swiper>
+</view>
+<!--商品分类部分  -->
+<view class='typebox'>
+  <!--秒杀  -->
+  <view class='typebox_1'>
+    <view class='countdown'>
+      <text class='ms_title'>限时秒杀 包邮</text>
+      <text class='count'>{{count}}</text>
+    </view>
+    <view class='msimg'>
+      <image class="ms_img" src="{{tbk.img}}">
+      </image>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <!--其他分类  -->
+  <view class='typebox_2'>
+    <view class='other' bindtap='xpsf'  >
+      <text class='ot_title'>新品首发</text>
+      <image class="ot_img" src="{{xpsf.plate_img}}" mode="aspectFill">
+      </image>
+    </view>
+    <view class='other' bindtap='xdbb' >
+      <text class='ot_title'>新店必备</text>
+      <image class="ot_img" src="{{xdbb.plate_img}}" mode="aspectFill">
+      </image>
+    </view>
+    <view class='other' bindtap='mrsj' >
+      <text class='ot_title'>每日十件</text>
+      <image class="ot_img" src="{{mrsj.plate_img}}" mode="aspectFill">
+      </image>
+    </view>
+    <view class='other' bindtap='xrth'>
+      <text class='ot_title'>新人特惠</text>
+      <image class="ot_img" src="{{xrth.plate_img}}" mode="aspectFill">
+      </image>
+    </view>
   </view>
+</view>
+<!--品牌展示  -->
+<view class='logozone'>
+  <!--循环版  -->
+  <block wx:for="{{logos}}" wx:for-index="index" wx:key="key">
+    <view class='logobox'>
+      <image src="{{brand['0'].logo}}" class="logo_image" mode="aspectFill" />
+    </view>
+  </block>
+  <!--静态版  -->
 </view>

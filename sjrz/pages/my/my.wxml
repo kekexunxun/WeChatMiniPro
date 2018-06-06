@@ -1,2 +1,49 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<!--主体部分  -->
+<import src="/tpls/product-small/product-small.wxml" />
+<view class='body'>
+  <!--个人信息  -->
+  <view class='messagebox'>
+    <view class='txbox'>
+      <open-data class="tx_img" type="userAvatarUrl"></open-data>
+    </view>
+    <view class='detail'>
+      <open-data class="name" type="userNickName"></open-data>
+      <button class='upbtn'>更新资料</button>
+    </view>
+  </view>
+  <!--客服  入住  -->
+  <view class='expand'>
+    <!--客服  -->
+    <view class="showmore">
+      <button open-type="contact">
+        <view class="show_left">
+          <image src="../../images/diamond.png" class="small_logo" mode="aspectFill" />
+          <text>官方客服</text>
+        </view>
+        <view class="show_right">
+          <image src="../../images/right.png" class="right_img" mode="aspectFill" />
+        </view>
+      </button>
+    </view>
+    <!--入住  -->
+    <view class="showmore">
+      <button bindtap='ruzhu'>
+        <view class="show_left">
+          <image src="../../images/diamond.png" class="small_logo" mode="aspectFill" />
+          <text>商家免费入住</text>
+        </view>
+        <view class="show_right">
+          <image src="../../images/right.png" class="right_img" mode="aspectFill" />
+        </view>
+      </button>
+    </view>
+  </view>
+  <!--推荐  -->
+  <view class='recommend'>
+    <view class='title_box'>
+      <image src="../../../images/diamond.png" class="recommend_logo" mode="aspectFill" />
+      <text>为你推荐</text>
+    </view>
+    <template is="product-small" data="{{goodslist:goodslist}}" />
+  </view>
+</view>

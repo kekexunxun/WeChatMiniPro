@@ -1,1 +1,34 @@
-/* pages/xrth/xrth.wxss */
+/*body背景  */
+@import "/tpls/product-row/product-row.wxss";
+page{
+  position:flex;  
+  background-color:#f5f6f7;
+  width: 100%;
+  height: 100%;
+}
+.body{
+  display:flex;
+  flex-direction:column;
+  /* background-color: white; */
+}
+/*顶部  */
+.topbox{
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+.pagetitle{
+  display: inline-block;
+  padding-left:10px;
+  padding-right:10px;
+  vertical-align: middle;
+  vertical-align:-20%;
+}
+.tline{
+  border-bottom:1px solid #dedde0;
+  display: inline-block;
+  width: 60px;
+  line-height: 10px;
+  height: 30px;
+}
+/*商品展示  */

@@ -1,0 +1,22 @@
+<!--限时特卖-->
+<!--背景遮罩  -->
+<import src="/tpls/product-small/product-small.wxml" />
+<view class='body'>
+  <!--商品展示区 2个商品 -->
+  <view class='product'>
+    <view class='product-box' wx:for="{{goods}}" wx:key="key">
+      <view class='product-container'>
+        <view class='product-image'>
+          <image mode='widthFix' src='{{item.original_img}}'></image>
+        </view>
+        <view class='product-title'>
+          <text>{{item.goods_title}}</text>
+        </view>
+        <view class='product-bottom'>
+          <text class='product-bottom-text'>已拼{{item.on_sell_num}}人</text>
+          <button class='baoming-btn-small' bindtap='signup' data-goodsid="{{item.goods_id}}">我要报名</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

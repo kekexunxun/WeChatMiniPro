@@ -1,1 +1,118 @@
-/* pages/signup/signup.wxss */
+/*body背景  */
+page{
+  position:flex;  
+  background-color:white;
+  width: 100%;
+  height: 100%;
+}
+.body{
+  display:flex;
+  flex-direction:column;
+   /* background-color: white;  */
+}
+/*主图  */
+.bannerbox{
+  width: 100%;
+  height:180px;
+}
+.banner_img{
+  width: 100%;
+  height:180px;
+}
+/*详情  */
+.good_name{
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.count{
+  color:#f60042;
+  display: block;
+  font-size: 14px;
+}
+.timelimit{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.time_img{
+  width:20px;
+  height: 20px;
+  vertical-align:middle;
+  padding-right: 10px;
+}
+.time_text{
+  font-size: 14px;
+  color: #acacac;
+  display: inline-block;
+
+}
+.typebox{
+  font-size: 15px;
+  color:gray;
+  margin-bottom: 15px;
+}
+.date{
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+}
+.signupzone{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.input_img{
+  width: 34px;
+  height: 34px;
+}
+.input_sign{
+  width: 80%;
+  border: 1rpx solid gainsboro;
+  line-height: 30px;
+  font-size: 12px;
+  border-radius:10px;
+  padding-left: 16rpx;
+}
+.inputzone{
+  display: flex;
+  flex-direction: row;
+  line-height: 40px;
+}
+.inputzone-img{
+  text-align:right;
+  width:25%;
+  padding-right:5%;
+}
+.inputzone-input{
+  width: 85%;
+}
+.inputzone image{
+  width: 26px;
+}
+.btnzone{
+  display: flex;
+  flex-direction: column;
+}
+.submitbtn{
+  width:48%;
+  margin-top:10px;
+  line-height:35px;
+  border-radius:16px;
+  color:white;
+  background-color:#f60042;
+  display: block;
+}
+.rule{
+  
+  text-align: center;
+  font-size: 10px;
+  color:gray;
+}
+.detail{
+  padding: 10rpx 20rpx;
+}

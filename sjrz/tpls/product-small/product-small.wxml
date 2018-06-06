@@ -1,0 +1,19 @@
+<!-- 这是单个产品的模板  宽度为50%的模板-->
+<template name="product-small">
+  <view class='product'>
+    <view class='product-box' wx:for="{{goodslist}}" wx:key="key">
+      <view class='product-container'>
+        <view class='product-image'>
+          <image mode='widthFix' src='{{item.original_img}}'></image>
+        </view>
+        <view class='product-title'>
+          <text>{{item.goods_name}}</text>
+        </view>
+        <view class='product-bottom'>
+          <text class='product-bottom-text'>已拼{{item.on_sell_num}}人</text>
+          <button class='baoming-btn-small' bindtap='signup' data-goodsid="{{item.goods_id}}">我要报名</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

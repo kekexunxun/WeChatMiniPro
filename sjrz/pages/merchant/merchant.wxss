@@ -1,1 +1,139 @@
-/* pages/merchant/merchant.wxss */
+/*body背景  */
+page{
+  position:flex;  
+  background-color:#f5f6f7;
+  width: 100%;
+  height: 100%;
+}
+.body{
+  display:flex;
+  flex-direction:column;
+}
+/*banner 主图 */
+.bannerbox{
+  width: 100%;
+  height: 180px;
+}
+.banner_img{
+  width: 100%;
+  height: 180px;
+}
+/*报名流程  */
+.enlistbox{
+  width: 100%;
+  background-color: white;
+}
+.common_title{
+  font-size: 15px;
+  line-height: 35px;
+  border-bottom: 1.5px solid #f5f6f7;
+}
+.common_title text{
+  display: block;
+  border-left: 4px solid red;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.enlist_con{
+  width: 100%;
+  display: flex;
+}
+.imgbox{
+  display: flex;
+  align-items: center;
+  margin: 0 auto; 
+  padding: 10px;
+}
+.lc_img{
+  width: 45px;
+  height: 45px;
+  margin: 0 15px;
+}
+.lc_img2{
+  width: 30px;
+  height: 8px;
+}
+/*为什么选择  */
+.whybox{
+  width: 100%;
+  margin-top:10px;
+  background-color: white;
+}
+.reasonbox{
+  width: 100%;
+   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom:10px;
+}
+.reason{
+   width: 50%;
+}
+.rimgbox{
+  width: 90%;
+  border:1px solid #f5f6f7;
+  margin: 0 auto;
+  margin-top: 5px;
+  border-radius:7px;
+  overflow: hidden;
+  text-align: center;
+}
+.reason_img{
+  width: 100%;
+  height: 105px;
+}
+.reason_text1{
+  font-size: 14px;
+  display: block;
+  line-height: 20px;
+}
+.reason_text2{
+  font-size: 10px;
+  color: gray;
+  display:block;
+  line-height: 23px;
+}
+/*未来你将  */
+.futruebox{
+  width: 100%;
+  background-color: white;
+}
+.peoplezone{
+  background-color: #f5f6f7;
+}
+.peoplebox{
+  display: flex;
+  align-items: center;
+  margin-top: 2rpx;
+  background-color: white;
+}
+.txbox{
+  padding: 20rpx;
+}
+.introduce{
+  padding:20px; 
+}
+.tx_img{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.name{
+  font-size: 15px;
+  line-height: 30px;
+}
+.shop{
+  font-size: 12px;
+  color: #999;
+  padding: 0 5px;
+}
+.detail{
+   display: block;
+   font-size: 12px;
+   line-height: 16px;
+   overflow:hidden;
+   text-overflow:ellipsis;
+   white-space:wrap;
+ }

@@ -34,6 +34,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    siteroot: 'https://jiujinwx.saike.com'
   }
 })
